@@ -53,11 +53,11 @@ nav ul form {
 .gallary-heading h1{
     background-color: yellow;
     color: black;
-   margin-left: 33vw;
-   margin-right: 33vw;
+   margin-left: 30vw;
+   margin-right: 30vw;
 } 
 .gallary-heading h2{
-    color: black;
+    color: rgb(255, 255, 255);
 } 
 .gallary{
     padding: 10px;
