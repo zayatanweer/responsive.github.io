@@ -1,47 +1,59 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     min-height: 100vh;
     width: 100vw;
 }
-nav{
+
+nav {
     background-color: rgba(216, 21, 241, 0.747);
     text-align: justify;
     position: fixed;
     width: 100vw;
     height: 6vh;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
     list-style-type: none;
 }
-nav ul li a{
-    padding: 10px 5px;
+
+nav ul li a {
+    padding: 10px 7px;
     display: inline-block;
     color: #fff;
     text-decoration: none;
     font-family: cursive;
+    font-size: 1vw;
 }
-nav ul ul li{
+
+nav ul ul li {
     padding: 1px;
+    display: inline-block;
     margin-bottom: 1px;
-    position: relative; left: 70vw; bottom: 40px;
+    position: relative;
+    left: 60vw;
+    bottom: 2.5vw;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     background-color: crimson;
 }
+
 nav ul form {
     padding: 10px;
     margin-bottom: 7px;
-    font-size: 18px;
+    font-size: 1vw;
     font-family: cursive;
     color: #fff;
     float: right;
     width: 17%;
-  }
-.gallary-container{
+}
+
+.gallary-container {
     background-color: aqua;
     background-image: url(https://images.unsplash.com/photo-1461301214746-1e109215d6d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
     background-attachment: fixed;
@@ -49,52 +61,66 @@ nav ul form {
     padding: 10px;
     max-width: 100vw;
     color: #fff;
-    
+
 }
-.gallary-heading{
+
+.gallary-heading {
     margin-top: 50px;
     text-align: center;
 }
-.gallary-heading h1{
+
+.gallary-heading h1 {
     background-color: yellow;
     color: black;
-   margin-left: 30vw;
-   margin-right: 30vw;
-} 
-.gallary-heading h2{
+    margin-left: 30vw;
+    margin-right: 30vw;
+    font-size: 1.5vw;
+}
+
+.gallary-heading h2 {
     color: rgb(255, 255, 255);
-} 
-.gallary{
+    font-size: 1.5vw;
+}
+
+.gallary {
     padding: 10px;
     text-align: center;
-    
+
 }
-.img-box{
+
+.img-box {
     margin: 5px;
     max-width: 30%;
     text-align: center;
     padding: 10px;
     display: inline-block;
 }
-.img-box img{
+
+.img-box img {
     max-width: 100%;
 }
-.action{
+
+.action {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 10px;
 }
-#like, #dislike{
+
+#like,
+#dislike {
     background-color: rgba(65, 5, 5, 0.185);
     padding: 5px 10px;
     border-radius: 10px;
 }
-#like:hover, #dislike:hover{
+
+#like:hover,
+#dislike:hover {
     background-color: rgba(250, 37, 37, 0.185);
     padding: 7px 15px;
 }
-#contact{
+
+#contact {
     min-height: 100vh;
     display: flex;
     justify-content: space-around;
@@ -104,24 +130,31 @@ nav ul form {
     background-attachment: fixed;
     background-size: cover;
 }
-.address{
+
+.address {
     width: 45%;
     text-align: center;
     color: #fff;
     font-size: 1.3em;
 }
-.address header, .form header{
+
+.address header,
+.form header {
     margin: 10px 0;
     color: rgb(128, 0, 0);
 }
-.form{
+
+.form {
     width: 45%;
 }
-.form input, .form textarea, .form label{
+
+.form input,
+.form textarea,
+.form label {
     outline: none;
     border: none;
     background-color: rgba(7, 7, 7, 0.685);
-    color:white;
+    color: white;
     box-sizing: border-box;
     width: 60%;
     display: block;
@@ -130,26 +163,34 @@ nav ul form {
     font-size: 1.2em;
     border-radius: 5px;
 }
-::placeholder{
+
+::placeholder {
     color: #fff;
 }
-@media(max-width:425px){
-    .img-box{
+
+@media(max-width:425px) {
+    .img-box {
         margin: 5px;
         max-width: 90%;
         text-align: center;
         padding: 10px;
         display: inline-block;
     }
-    #contact{
+
+    #contact {
         display: block;
         height: auto;
     }
-    .address, .form{
+
+    .address,
+    .form {
         width: 100%;
         text-align: center;
     }
-    .form input, .form textarea, .form label{
+
+    .form input,
+    .form textarea,
+    .form label {
         width: 90%;
         display: inline-block;
 
@@ -157,25 +198,30 @@ nav ul form {
     }
 }
 
-@media(max-width:768px)and (min-width:426px){
-    .img-box{
+@media(max-width:768px)and (min-width:426px) {
+    .img-box {
         margin: 5px;
         max-width: 45%;
         text-align: center;
         padding: 10px;
         display: inline-block;
     }
-    #contact{
+
+    #contact {
         display: block;
     }
-    .address, .form{
+
+    .address,
+    .form {
         width: 100%;
         text-align: center;
     }
-    .form input, .form textarea, .form label{
+
+    .form input,
+    .form textarea,
+    .form label {
         width: 70%;
         display: inline-block;
         /* background-color: rgba(0, 0, 0, 0.885); */
     }
 }
-
